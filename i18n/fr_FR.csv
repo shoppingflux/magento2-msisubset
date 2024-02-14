@@ -1,0 +1,6 @@
+"Export Stock Sources Separately","Exporter les sources de stock séparément"
+"Main Stock Sources","Sources de stock principales"
+"Source ""%1"" - Quantity","Source ""%1"" - Quantité"
+"Source ""%1"" - Statut","Source ""%1"" - Statut"
+"The quantity and stock status of the products for each of the selected sources will be exported as:","La quantité et l'état en stock des produits pour chacune des sources sélectionnées seront exportés en tant que :"
+"The selected sources will be used for calculating the values of the main stock fields (""quantity"" and ""is-in-stock"").","Les sources sélectionnées seront utilisées pour calculer les valeurs des champs de stock globaux (""quantity"" et ""is-in-stock"")."

@@ -1,0 +1,19 @@
+{
+    "name": "shoppingfeed/magento2-msi-subset",
+    "version": "1.0.0",
+    "description": "Shopping Feed complementary module for exporting only a subset of the sources of an MSI stock.",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "shoppingfeed/magento2-manager": ">=0.52.0"
+    },
+    "license": "OSL-3.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ShoppingFeed\\MsiSubset\\": ""
+        }
+    }
+}

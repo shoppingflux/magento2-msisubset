@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference 
+        for="ShoppingFeed\Manager\Model\Feed\Product\Section\Config\StockInterface"
+        type="ShoppingFeed\MsiSubset\Model\Feed\Product\Section\Config\Stock"
+    />
+
+    <preference 
+        for="ShoppingFeed\Manager\Model\Feed\Product\Section\Adapter\StockInterface"
+        type="ShoppingFeed\MsiSubset\Model\Feed\Product\Section\Adapter\Stock"
+    />
+
+    <type name="ShoppingFeed\MsiSubset\Model\Feed\Product\Section\Config\Stock">
+        <arguments>
+            <argument name="qtyResolver" xsi:type="object">ShoppingFeed\MsiSubset\Model\Feed\Product\Stock\QtyResolver\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="ShoppingFeed\MsiSubset\Model\Feed\Product\Section\Adapter\Stock">
+        <arguments>
+            <argument name="qtyResolver" xsi:type="object">ShoppingFeed\MsiSubset\Model\Feed\Product\Stock\QtyResolver\Proxy</argument>
+        </arguments>
+    </type>
+</config>
